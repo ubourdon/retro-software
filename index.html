@@ -26,6 +26,30 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+        <style>
+            #actions {
+                border-collapse: collapse;
+            }
+
+            #actions td, #actions th {
+                border: solid white 3px;
+                text-align: center;
+                vertical-align: middle;
+                padding: 10px;
+            }
+
+            #actions tr:nth-child(2), #actions tr:nth-child(3), #actions tr:nth-child(4) {
+                background-color: red;
+            }
+
+            #actions tr:nth-child(5) {
+                background-color: green;
+            }
+
+            #actions tr > td:nth-child(3) {
+                font-size: 1.3em;
+            }
+        </style>
 	</head>
 
 	<body>
@@ -52,9 +76,29 @@
                         <h2>Les actions de la précédente rétrospective</h2>
                     </section>
                     <section>
-                        <ul>
-                            <li>TODO : lister les précédentes actions et leur statut</li>
-                        </ul>
+                        <table id="actions" collapse>
+                            <tr><th>Action</th><th>Resp suivi</th><th>Statut</th></tr>
+                            <tr>
+                                <td>Demander à Jean-François Forget (aka JFF) l'organigramme des P.O pour chaque projets</td>
+                                <td>Nicolas Cauvet</td>
+                                <td>KO</td>
+                            </tr>
+                            <tr>
+                                <td>Nicolas Cauvet devient le point d'entrée pour la table ronde</td>
+                                <td>Equipe Software</td>
+                                <td>KO</td>
+                            </tr>
+                            <tr>
+                                <td>Définition du DONE + pré-requis pour les "tâches"/"colonnes" de la table ronde</td>
+                                <td>Olivier Girardot</td>
+                                <td>KO</td>
+                            </tr>
+                            <tr>
+                                <td>Construire un kanban board spécifique pour la table ronde</td>
+                                <td>Edouard Strauser</td>
+                                <td>OK</td>
+                            </tr>
+                        </table>
                     </section>
                 </section>
 
