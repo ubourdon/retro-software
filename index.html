@@ -38,8 +38,12 @@
                 padding: 10px;
             }
 
-            #actions tr:nth-child(2), #actions tr:nth-child(3), #actions tr:nth-child(4) {
+            #actions tr:nth-child(2), #actions tr:nth-child(4) {
                 background-color: red;
+            }
+
+            #actions tr:nth-child(3) {
+                background-color: orange;
             }
 
             #actions tr:nth-child(5) {
@@ -54,6 +58,10 @@
                 font-size: 1.8em;
                 color: greenyellow;
             }
+
+            .red { color: red; }
+            .orange { color: orange; }
+            .green { color: green; }
         </style>
 	</head>
 
@@ -91,7 +99,7 @@
                             <tr>
                                 <td>Nicolas Cauvet devient le point d'entrée pour la table ronde</td>
                                 <td>Equipe Software</td>
-                                <td>KO</td>
+                                <td>???</td>
                             </tr>
                             <tr>
                                 <td>Définition du DONE + pré-requis pour les "tâches"/"colonnes" de la table ronde</td>
@@ -110,7 +118,7 @@
 				<!-- Example of nested vertical slides -->
 				<section>
                     <section>
-                        <h3>L'&Eacute;quipe a-t-elle besoin de représentants pour entretenir et faire évoluer l'organisation et les pratiques de l'équipe software</h3>
+                        <h3>L'&Eacute;quipe a-t-elle besoin de représentants pour entretenir et faire évoluer son organisation et ses pratiques</h3>
                         <img src="img/agence_tous_risques.jpg" alt="équipe CD">
                     </section>
                     <section>
@@ -137,10 +145,22 @@
                 <section>
                     <section>
                         <h1>A-t-on besoin de représentants ?</h1>
-                        <h3>CORE PROTOCOL : Decider</h3>
                     </section>
                     <section>
-                        TODO : Règles du vote Decider
+                        <h3>Règles du vote</h3>
+                        <ol>
+                            <li>Voulons-nous utiliser cette rétrospective pour désigner des représentants ?</li>
+                            <li>
+                                Tout le monde vote simultanément à main levée :
+                                <ul>
+                                    <li class="green">pouce vers le haut : OUI</li>
+                                    <li class="red">pouce vers le bas : NON</li>
+                                    <li class="orange">main à plat : SOUTIEN simple</li>
+                                </ul>
+                            </li>
+                            <li>Si tous les votes sont SOUTIEN ou OUI alors la proposition est adoptée</li>
+                            <li>Sinon que faut-il pour que les "NON" disent OUI ou SOUTIEN</li>
+                        </ol>
                     </section>
                 </section>
 
